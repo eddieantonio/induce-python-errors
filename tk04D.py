@@ -1,1 +1,1 @@
-"duck" / "quack"
+06-ncss06.py
