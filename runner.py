@@ -12,3 +12,8 @@ for test_case in sorted(here.glob("??-ncss??*.py")):
     process = subprocess.run([sys.executable, test_case], capture_output=True)
     error_message = process.stderr.decode("UTF-8").splitlines()[-1]
     print(f"{test_case.stem}: {error_message}")
+
+for test_case in sorted(here.glob("tk*.py")):
+    process = subprocess.run([sys.executable, test_case], capture_output=True)
+    error_message = process.stderr.decode("UTF-8").splitlines()[-1]
+    print(f"{test_case.stem}: {error_message}")
