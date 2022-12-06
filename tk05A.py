@@ -1,1 +1,1 @@
-from math import sqt
+from math import sqr
