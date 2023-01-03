@@ -40,44 +40,54 @@ e.g., error messages that come from an NCSS-specific library.
 |   15 |         653 | ncss15 | stdlib  | TypeError: ’---’ object is not ’---’  |
 |   16 |         515 | ncss16 | unknown | TypeError: Expected an RGB triple or string color name  |
 
+Upon personal communication with Jeffries, it appears that some error
+messages were reworded for the sake of localizing for the audience of
+NCSS (namely, Australian middle-schoolers ).
 
 # Top error messages (Kohn 2022)
 
-|      | Code    | Origin  | Message |
-|-----:|---------|---------|---------|
-|   ⭐️ |   tk01A | stdlib  | **SyntaxError: invalid syntax** |
-|      |   tk01B | stdlib  | SyntaxError: cannot assign to literal |
-|      |   tk01C | stdlib  | SyntaxError: 'return' outside function |
-|      |   tk01D | stdlib  | SyntaxError: 'break' outside loop |
-|      |   tk01E | stdlib  | SyntaxError: duplicate  argument '---' in function definition |
-|      |   tk01F | stdlib  | SyntaxError: import * only allowed at module level |
-|      |   tk01G | stdlib  | SyntaxError: name '---' is parameter and global  |
-|   ⭐️ |   tk02A | stdlib  | **IndentationError: unindent does not match  any outer indentation level** |
-|   ⭐️ |   tk02B | stdlib  | **IndentationError: unexpected indent** |
-|   ⭐️ |   tk03A | stdlib  | **NameError: name '---' is not defined** |
-|   ⭐️ |   tk03B | stdlib  | **UnboundLocalError: local variable '---' referenced before assignment** |
-|   ⭐️ |   tk04A | stdlib  | **TypeError: ---() takes --- positional arguments but --- were given** |
-|   ⭐️ |   tk04B | stdlib  | **TypeError: ---() missing --- required positional argument: '---'** |
-|   ⭐️ |   tk04C | stdlib  | **TypeError: '---' object is not callable** |
-|   ⭐️ |   tk04D | stdlib  | **TypeError: unsupported operand type(s) for ---: '---' and '---'** |
-|      |   tk04E | stdlib  | TypeError: can only concatenate str (not "---") to str |
-|      |   tk04F | stdlib  | TypeError: '---' object cannot be interpreted as an integer |
-|      |   tk04G | stdlib  | TypeError: '---' object is not subscriptable |
-|      |   tk04H | stdlib  | TypeError: list indices must be integers or slices, not --- |
-|      |   tk04I | stdlib  | TypeError: cannot unpack non-iterable int object |
-|      |   tk04J | stdlib  | TypeError: must be real number, not --- |
-|   ⭐️ |   tk05A | stdlib  | **ImportError: cannot import name '---' from '---' (---)** |
-|      |   tk05B | stdlib  | ModuleNotFoundError: No module named 'spam'
-|   ⭐️ |   tk06A | stdlib  | **AttributeError: 'int' object has no attribute 'spam'** |
-|   ⭐️ |   tk07A | stdlib  | **IndexError: list index out of range** |
-|      |   tk08A | stdlib  | KeyError: '---' |
-|      |   tk09A | stdlib  | ValueError: math domain error |
-|      |   tk09B | stdlib  | ValueError: not enough values to unpack (expected ---, got ---) |
-|      |   tk09C | stdlib  | ValueError: too many values to unpack (expected ---) |
-|      |   tk10A | stdlib  | ZeroDivisionError: division by zero |
-|      |   tk10B | stdlib  | ZeroDivisionError: integer division or modulo by zero |
-|      |   tk10C | stdlib  | ZeroDivisionError: float division by zero |
+This list is based on personal communication with [Tobias Kohn][]. According
+to Kohn, this is a "heuristic «ad-hoc» list" of error messages", all
+originating from CPython. There is no frequency information associated
+with this list, and starred (⭐️) error messages are subjectively
+specified as the most prominent.
+
+|      | Code    | Message |
+|-----:|---------|---------|
+|   ⭐️ |   tk01A | **SyntaxError: invalid syntax** |
+|      |   tk01B | SyntaxError: cannot assign to literal |
+|      |   tk01C | SyntaxError: 'return' outside function |
+|      |   tk01D | SyntaxError: 'break' outside loop |
+|      |   tk01E | SyntaxError: duplicate  argument '---' in function definition |
+|      |   tk01F | SyntaxError: import * only allowed at module level |
+|      |   tk01G | SyntaxError: name '---' is parameter and global  |
+|   ⭐️ |   tk02A | **IndentationError: unindent does not match  any outer indentation level** |
+|   ⭐️ |   tk02B | **IndentationError: unexpected indent** |
+|   ⭐️ |   tk03A | **NameError: name '---' is not defined** |
+|   ⭐️ |   tk03B | **UnboundLocalError: local variable '---' referenced before assignment** |
+|   ⭐️ |   tk04A | **TypeError: ---() takes --- positional arguments but --- were given** |
+|   ⭐️ |   tk04B | **TypeError: ---() missing --- required positional argument: '---'** |
+|   ⭐️ |   tk04C | **TypeError: '---' object is not callable** |
+|   ⭐️ |   tk04D | **TypeError: unsupported operand type(s) for ---: '---' and '---'** |
+|      |   tk04E | TypeError: can only concatenate str (not "---") to str |
+|      |   tk04F | TypeError: '---' object cannot be interpreted as an integer |
+|      |   tk04G | TypeError: '---' object is not subscriptable |
+|      |   tk04H | TypeError: list indices must be integers or slices, not --- |
+|      |   tk04I | TypeError: cannot unpack non-iterable int object |
+|      |   tk04J | TypeError: must be real number, not --- |
+|   ⭐️ |   tk05A | **ImportError: cannot import name '---' from '---' (---)** |
+|      |   tk05B | ModuleNotFoundError: No module named 'spam'
+|   ⭐️ |   tk06A | **AttributeError: 'int' object has no attribute 'spam'** |
+|   ⭐️ |   tk07A | **IndexError: list index out of range** |
+|      |   tk08A | KeyError: '---' |
+|      |   tk09A | ValueError: math domain error |
+|      |   tk09B | ValueError: not enough values to unpack (expected ---, got ---) |
+|      |   tk09C | ValueError: too many values to unpack (expected ---) |
+|      |   tk10A | ZeroDivisionError: division by zero |
+|      |   tk10B | ZeroDivisionError: integer division or modulo by zero |
+|      |   tk10C | ZeroDivisionError: float division by zero |
 
 [Jeffries et al. 2022]: https://dl.acm.org/doi/abs/10.1145/3502718.3524809
 [NCSS Challenge]: https://grokacademy.org/challenge/
 [reprex]: https://community.rstudio.com/t/faq-whats-a-reproducible-example-reprex-and-how-do-i-create-one/5219
+[Tobias Kohn]: https://tobiaskohn.ch/
